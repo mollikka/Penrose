@@ -20,7 +20,7 @@ kite_texture,dart_texture = load_textures("images/kite_tex.png","images/dart_tex
 ```
 
 After this you can call `draw_model(surf,model,offx,offy,scale,draw_options)`, where `surf` is a Pygame Surface.
-offx, offy and scale specify location and scale on the surface. The exact effect of these depend on the initial state.
+`offx`, `offy` and `scale` specify location and scale on the surface. The exact effect of these depend on the initial state.
 I recomment having model coordinates in the [-1,1] range for easy placement.
 
 draw_options is a dict:
