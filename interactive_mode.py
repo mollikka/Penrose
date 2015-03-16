@@ -46,6 +46,11 @@ def interactive_mode(win_width,win_height):
                 if event.key == pygame.K_y:
                     draw_options["drawmode"] = "solid"
                     draw_model(window,model,offx,offy,scale,draw_options)
+                if event.key == pygame.K_r:
+                    kite_texture,dart_texture = load_textures("images/kite_tex.png","images/dart_tex.png")
+                    draw_options["dart_texture"] = dart_texture
+                    draw_options["kite_texture"] = kite_texture
+                    draw_model(window,model,offx,offy,scale,draw_options)
 
 if __name__ == "__main__":
     interactive_mode(600,600)
